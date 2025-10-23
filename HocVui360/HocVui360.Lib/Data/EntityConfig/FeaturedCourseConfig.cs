@@ -8,6 +8,16 @@ internal class FeaturedCourseConfig : IEntityTypeConfiguration<FeaturedCourse>
 {
     public void Configure(EntityTypeBuilder<FeaturedCourse> builder)
     {
-        throw new NotImplementedException();
+        builder.ToTable("FeaturedCourses");
+
+        builder.HasKey(x => x.Id);
+
+        builder.Property(x => x.CreatedAt);
+
+        builder.Property(x => x.UpdatedAt);
+
+        builder.Property(x => x.RowVersion);
+
+        builder.Property(x => x.IsDeleted);
     }
 }

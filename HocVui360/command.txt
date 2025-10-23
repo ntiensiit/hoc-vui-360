@@ -1,0 +1,5 @@
+dotnet ef migrations add <migration-name> --project "HocVui360.Lib" --startup-project "HocVui360.Api"
+dotnet ef database update --project "HocVui360.Lib" --startup-project "HocVui360.Api"
+dotnet ef migrations remove --project "HocVui360.Lib" --startup-project "HocVui360.Api"
+dotnet ef database drop --force --project "HocVui360.Lib" --startup-project "HocVui360.Api"
+dotnet ef migrations list --project "HocVui360.Lib" --startup-project "HocVui360.Api"

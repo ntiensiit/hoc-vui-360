@@ -8,6 +8,8 @@ internal class OpeningScheduleConfig : IEntityTypeConfiguration<OpeningSchedule>
 {
     public void Configure(EntityTypeBuilder<OpeningSchedule> builder)
     {
-        throw new NotImplementedException();
+        builder.ToTable("OpeningSchedules");
+
+        builder.HasKey(x => x.Id);
     }
 }

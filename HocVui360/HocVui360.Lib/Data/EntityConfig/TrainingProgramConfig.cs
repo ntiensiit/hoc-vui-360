@@ -8,6 +8,16 @@ internal class TrainingProgramConfig : IEntityTypeConfiguration<TrainingProgram>
 {
     public void Configure(EntityTypeBuilder<TrainingProgram> builder)
     {
-        throw new NotImplementedException();
+        builder.ToTable("TrainingPrograms");
+
+        builder.HasKey(x => x.Id);
+
+        builder.Property(x => x.CreatedAt);
+
+        builder.Property(x => x.UpdatedAt);
+
+        builder.Property(x => x.RowVersion);
+
+        builder.Property(x => x.IsDeleted);
     }
 }
