@@ -1,4 +1,4 @@
-package com.example.hocvui360_flutter.hocvui360_flutter
+package com.example.hocvui360
 
 import io.flutter.embedding.android.FlutterActivity
 

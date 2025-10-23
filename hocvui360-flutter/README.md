@@ -1,4 +1,4 @@
-# hocvui360_flutter
+# hocvui360
 
 A new Flutter project.
 
